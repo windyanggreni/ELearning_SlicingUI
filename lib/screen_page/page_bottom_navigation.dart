@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project4_slicingui/screen_page/page_camera.dart';
+import 'package:project4_slicingui/screen_page/page_maps.dart';
 import 'package:project4_slicingui/screen_page/page_mycourse.dart';
 import 'package:project4_slicingui/screen_page/page_home.dart';
 import 'package:project4_slicingui/screen_page/page_profil_user.dart';
@@ -27,8 +29,8 @@ class _PageBottomNavigationBarState extends State<PageBottomNavigationBar> with 
         children: [
           PageHome(),
           PageMyCourses(),
-          PageHome(),
-          PageHome(),
+          AksesKamera(),
+          MapsFlutter(),
           //PageProfileUser(),
         ],
       ),
@@ -73,9 +75,9 @@ class _PageBottomNavigationBarState extends State<PageBottomNavigationBar> with 
                   children: [
                     Padding(
                       padding: EdgeInsets.only(bottom: 4),  // Control spacing between icon and text
-                      child: Icon(Icons.book),
+                      child: Icon(Icons.camera),
                     ),
-                    Text("Blog"),
+                    Text("Kamera"),
                   ],
                 ),
               ),
@@ -87,9 +89,9 @@ class _PageBottomNavigationBarState extends State<PageBottomNavigationBar> with 
                   children: [
                     Padding(
                       padding: EdgeInsets.only(bottom: 4),  // Control spacing between icon and text
-                      child: Icon(Icons.person),
+                      child: Icon(Icons.maps_home_work),
                     ),
-                    Text("Profil User"),
+                    Text("Maps"),
                   ],
                 ),
               ),
